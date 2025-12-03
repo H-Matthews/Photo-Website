@@ -3,57 +3,29 @@
 {% block title %}Photo Collage{% endblock %}
 
 {% block content %}
-    <h1>Photos</h1>
+    <h1>Alaskan Photos</h1>
     
     <div class="photo-collage">
         <!-- Photo Item 1 -->
         <div class="photo-item">
-            <!-- Use Flask's url_for to link images -->
-            <img src="{{ url_for('static', filename='images/Waterfall_Gatlinburg.jpg') }}"
-            <div class="photo-caption">
-                Summer Adventure, 2025
-            </div>
-        </div>
-
-        <!-- Photo Item 2 -->
-        <div class="photo-item">
-            <img src="{{ url_for('static', filename='images/placeholder-2.jpg') }}" 
-                 alt="Mountain hiking trip"
-                 onerror="this.onerror=null; this.src='https://placehold.co/450x300/3498db/ffffff?text=Mountain+Trip';">
-            <div class="photo-caption">
-                High Peaks Hike
-            </div>
-        </div>
-
-        <!-- Photo Item 3 -->
-        <div class="photo-item">
-            <img src="{{ url_for('static', filename='images/placeholder-3.jpg') }}" 
-                 alt="Family gathering dinner"
-                 onerror="this.onerror=null; this.src='https://placehold.co/450x300/e67e22/ffffff?text=Family+Dinner';">
-            <div class="photo-caption">
-                Holiday Dinner
-            </div>
+            <img src="{{ url_for('static', filename='images/Waterfall_Gatlinburg.jpg') }}">
         </div>
         
-        <!-- Photo Item 4 (You can add many more) -->
         <div class="photo-item">
-            <img src="{{ url_for('static', filename='images/placeholder-4.jpg') }}" 
-                 alt="Coffee shop work session"
-                 onerror="this.onerror=null; this.src='https://placehold.co/450x300/9b59b6/ffffff?text=Coffee+Shop';">
-            <div class="photo-caption">
-                Freelance Life
-            </div>
+            <img src="{{ url_for('static', filename='images/Alaskan_Mountains.jpg') }}">
         </div>
         
-        <!-- Photo Item 5 -->
         <div class="photo-item">
-            <img src="{{ url_for('static', filename='images/placeholder-5.jpg') }}" 
-                 alt="City skyline at dusk"
-                 onerror="this.onerror=null; this.src='https://placehold.co/450x300/1abc9c/ffffff?text=City+View';">
-            <div class="photo-caption">
-                Evening Skyline
-            </div>
+            <img src="{{ url_for('static', filename='images/Glacier.jpg') }}">
         </div>
-
+        
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/Mountain_Waterfall.jpg') }}">
+        </div>
+        
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/Beautiful_Valley.jpg') }}">
+        </div>
+        
     </div>
 {% endblock %}
