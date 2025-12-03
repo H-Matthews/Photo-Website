@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The child template will fill in this 'title' block -->
+    <title>{% block title %}My Flask Application{% endblock %}</title>
+
+    <!-- 
+        We use Flask's url_for to link static files. 
+        It looks in the 'static' folder (which we will create next)
+    -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/auth/login">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 
+            This is the main block where all child templates will insert their unique content.
+        -->
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Photos from Harrison Matthews</p>
+    </footer>
+</body>
+</html>

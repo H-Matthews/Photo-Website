@@ -27,7 +27,7 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 
 fi
 
-export FLASK_APP=flask_site:create_application
+export FLASK_APP=flask_app:create_application
 export FLASK_ENV=development
 
 echo "FLASK_APP set to: $FLASK_APP"
